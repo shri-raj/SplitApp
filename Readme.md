@@ -1,9 +1,11 @@
 # SplitApp - Expense Splitting Application
 
 ## Overview
+
 SplitApp is a Spring Boot application designed to help users track and split expenses among friends, roommates, or any group. It provides a simple and efficient way to manage shared expenses, calculate balances, and determine optimal settlements.
 
 ## Features
+
 - **Expense Management**: Create, update, and delete expenses
 - **Multiple Split Types**: Support for equal, percentage-based, and exact amount splits
 - **Balance Tracking**: Automatically calculate who owes whom
@@ -11,6 +13,7 @@ SplitApp is a Spring Boot application designed to help users track and split exp
 - **RESTful API**: Easy integration with frontend applications
 
 ## Technology Stack
+
 - **Backend**: Java 17, Spring Boot 3.5.0
 - **Database**: PostgreSQL
 - **Build Tool**: Maven
@@ -19,6 +22,7 @@ SplitApp is a Spring Boot application designed to help users track and split exp
 ## API Endpoints
 
 ### Expenses
+
 - `GET /expenses` - Get all expenses
 - `GET /expenses/{id}` - Get expense by ID
 - `POST /expenses` - Create a new expense
@@ -27,12 +31,14 @@ SplitApp is a Spring Boot application designed to help users track and split exp
 - `GET /expenses/people` - Get all people involved in expenses
 
 ### Person
+
 - `GET /people` - Get all people and their balances
 - `GET /settlements` - Get optimal settlement plan
 
 ## How to Use
 
 ### Creating an Expense with Equal Split
+
 ```json
 {
   "amount": 1000,
@@ -43,6 +49,7 @@ SplitApp is a Spring Boot application designed to help users track and split exp
 ```
 
 ### Creating an Expense with Exact Split
+
 ```json
 {
   "amount": 1000,
@@ -67,6 +74,7 @@ SplitApp is a Spring Boot application designed to help users track and split exp
 ```
 
 ### Creating an Expense with Percentage Split
+
 ```json
 {
   "amount": 1000,
@@ -96,11 +104,13 @@ SplitApp is a Spring Boot application designed to help users track and split exp
 ## Setup and Installation
 
 ### Prerequisites
+
 - Java 17 or higher
 - Maven
 - PostgreSQL database
 
 ### Configuration
+
 Update the `application.properties` file with your database connection details:
 
 ```properties
@@ -130,7 +140,8 @@ This application can be deployed to Render or any other cloud platform that supp
 ### Deploying to Render
 
 1. Create a `system.properties` file in the project root with:
-   ```
+
+   ```yaml
    java.runtime.version=17
    ```
 
@@ -141,9 +152,9 @@ This application can be deployed to Render or any other cloud platform that supp
 6. Configure environment variables for database credentials
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
 
-        
+Contributions are welcome! Please feel free to submit a Pull Request.
