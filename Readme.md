@@ -150,11 +150,3 @@ This application can be deployed to Render or any other cloud platform that supp
 4. Set the build command: `./mvnw clean package -DskipTests`
 5. Set the start command: `java -jar target/SplitApp-0.0.1-SNAPSHOT.jar`
 6. Configure environment variables for database credentials
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
